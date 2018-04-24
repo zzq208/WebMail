@@ -29,7 +29,7 @@ public class createConnect {
         mailSession.setDebug(false);
 
         try {
-            //获取Store对象
+            //获取Store对象a'b'casdf
             Store store = mailSession.getStore("pop3");
             //POP3服务器的登陆认证
             store.connect("pop.163.com", "17816869570@163.com","Zzq123456" );
