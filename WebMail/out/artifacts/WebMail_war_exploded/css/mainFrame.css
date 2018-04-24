@@ -1,0 +1,23 @@
+#mainFrame{
+    padding: 20px;
+}
+.tt {
+     background: url(/img/line.png) 0 0 repeat-y;
+     background-color: rgb(242, 244, 246);
+ }
+.head {
+    background-color: rgb(242,244,246);
+}
+.tcolor{
+    color:#7f7f7f;
+    font:normal 12px "lucida Grande",Verdana,"Microsoft YaHei";
+}
+#tbody{
+    cursor:pointer;
+}
+#displayContent{
+    padding: 20px;
+}
+#addresser{
+    padding-top: 7px;
+}

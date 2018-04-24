@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <display-name>mailDemo</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>DisplayHead</servlet-name>
+        <servlet-class>web.垃圾箱.DisplayHead</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayHead</servlet-name>
+        <url-pattern>/DisplayHead</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DisplayContent</servlet-name>
+        <servlet-class>web.垃圾箱.DisplayContent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayContent</servlet-name>
+        <url-pattern>/DisplayContent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HandleAttach</servlet-name>
+        <servlet-class>com.zzq.servlet.HandleAttach</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HandleAttach</servlet-name>
+        <url-pattern>/HandleAttach</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.zzq.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CheckID</servlet-name>
+        <servlet-class>com.zzq.servlet.CheckID</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckID</servlet-name>
+        <url-pattern>/CheckID</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>UpdateMailAccount</servlet-name>
+    <servlet-class>com.zzq.servlet.UpdateMailAccount</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateMailAccount</servlet-name>
+        <url-pattern>/UpdateMailAccount</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetMailAccount</servlet-name>
+        <servlet-class>com.zzq.servlet.GetMailAccount</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetMailAccount</servlet-name>
+        <url-pattern>/GetMailAccount</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    <servlet-name>GetMailList</servlet-name>
+    <servlet-class>com.zzq.servlet.GetMailList</servlet-class>
+</servlet>
+    <servlet-mapping>
+        <servlet-name>GetMailList</servlet-name>
+        <url-pattern>/GetMailList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetMailContent</servlet-name>
+        <servlet-class>com.zzq.servlet.GetMailContent</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetMailContent</servlet-name>
+        <url-pattern>/GetMailContent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetMailAttachment</servlet-name>
+        <servlet-class>com.zzq.servlet.GetMailAttachment</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetMailAttachment</servlet-name>
+        <url-pattern>/GetMailAttachment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SendMail</servlet-name>
+        <servlet-class>com.zzq.servlet.SendMail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SendMail</servlet-name>
+        <url-pattern>/SendMail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteMail</servlet-name>
+        <servlet-class>com.zzq.servlet.DeleteMail</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteMail</servlet-name>
+        <url-pattern>/DeleteMail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetDrafts</servlet-name>
+        <servlet-class>com.zzq.servlet.GetDrafts</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetDrafts</servlet-name>
+        <url-pattern>/GetDrafts</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateDraftBox</servlet-name>
+        <servlet-class>com.zzq.servlet.UpdateDraftBox</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateDraftBox</servlet-name>
+        <url-pattern>/UpdateDraftBox</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<title>Bootstrap 101 Template</title>
+
+<!-- Bootstrap -->
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<style>
+.tt {
+	background: url(../img/line.png) 0 0 repeat-y;
+	background-color: rgb(242, 244, 246);
+}
+.head {
+	background-color: rgb(242,244,246);
+}
+.tcolor{
+	color:#7f7f7f;
+	font:normal 12px "lucida Grande",Verdana,"Microsoft YaHei";
+}
+</style>
+<body>
+<div class="container-fluid">
+	<nav class="navbar navbar-inverse">
+		<div class="navbar-header"><a class="navbar-brand" href="#">JavaMail邮箱</a></div>
+		<ul class="nav navbar-nav navbar-left">
+			<li><a style="color:#FFF"><strong>朱朝乾</strong><17816869570@qq.com></a></li>
+			<li><a href="#">设置</a></li>
+			<li><a href="#">退出</a></li>
+		</ul>
+	</nav>
+</div>
+<div class="container-fluid">
+	<div class="col-md-1 sidebar" style="height:540px; background-color: #f5f5f5; padding: 20px;">
+		<ul class="nav nav-pills nav-stacked">
+			<li><a href="1"><strong>写信</strong></a></li>
+			<li><a href="2"><strong>收信</strong></a></li>
+		</ul>
+		<hr style='background-color:#999;height:1px;border:none;'>
+		<ul class="nav nav-pills nav-stacked">
+			<li class="active"><a href="3">收信箱</a></li>
+			<li><a href="4">草稿箱</a></li>
+			<li><a href="5">回收站</a></li>
+		</ul>
+	</div>
+	<div class="col-md-11 container" style="border: solid; padding: 20px; height:540px">
+		<div class="panel panel-default"> 
+			<!-- Default panel contents -->
+			<div class="panel-heading">
+				<div class="btn-group" role="group" aria-label="...">
+					<button type="button" class="btn btn-default">返回</button>
+					<button type="button" class="btn btn-default">回复</button>
+					<button type="button" class="btn btn-default">转发</button>
+					<button type="button" class="btn btn-default">删除</button>
+				</div>
+			</div>
+			<div class="panel-body head">
+				<table border="0" cellspacing="0" cellpadding="0">
+					<tbody>
+					<label for="subject" style="padding-bottom:10px">你的邮件我收到了</label>
+					
+						<tr>
+							<td>
+							<span class="tcolor"> 发件人： </span> 
+							<span class="tcolor"> 
+								<b style="color:#5fa207">小白
+								</b> 
+								<b>&lt;123456@qq.com&gt;
+								 </b> 
+							</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							<span class="tcolor">时&nbsp;&nbsp; 间：</span> 
+							<span class="tcolor"> 2018年4月1日(星期天) 中午1:06</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							<span class="tcolor"> 收件人： </span> 
+							<span class="tcolor"> 朱朝乾 </span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="content" style="border:solid; height:250px"></div>
+		</div>
+		<nav aria-label="...">
+			<ul class="pager">
+				<li><a href="#">上一封</a></li>
+				<li><a href="#">下一封</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script>  
+
+</script>
+</body>
+</html>

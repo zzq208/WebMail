@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">JavaMail邮箱</a>
+        </div>
+          <ul class="nav navbar-nav navbar-left">
+            <li><a style="color:#FFF"><strong>朱朝乾</strong><17816869570@qq.com></a></li>
+            <li><a href="#">设置</a></li>
+            <li><a href="#">退出</a></li>
+          </ul>
+    </nav>
+</div>
+<div class="container-fluid" >
+    <div class="col-md-1 sidebar" style="height: 540px; background-color: #f5f5f5; padding: 20px;">
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="1"><strong>写信</strong></a></li>
+        <li><a href="2"><strong>收信</strong></a></li>
+      </ul>
+      <hr style='background-color:#999;height:1px;border:none;'>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="3">收信箱</a></li>
+        <li><a href="4">草稿箱</a></li>
+        <li><a href="5">回收站</a></li>
+      </ul>
+    </div>
+	<div class="col-md-11 container" style="border: solid; padding: 20px;">
+	<form class="form-horizontal" role="form">
+        <div class="form-group">
+            <label for="recipient" class="col-md-1 control-label">收件人：</label>
+            <div class="col-md-10">
+            	<input type="email" class="form-control" id="recipient" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="subject" class="col-md-1 control-label">主题：</label>
+            <div class="col-md-10">
+            	<input type="text" class="form-control" id="subject" placeholder="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="attachment" class="col-md-1 control-label">上传附件</label>
+            <div class="col-md-10">
+            <input type="file" id="attachment">
+            <p class="help-block">附件大小最好不要超过2M</p>
+            </div>
+ 		</div>
+   	  	<div class="form-group">
+            <label for="content" class="col-md-1 control-label">正文：</label>
+            <div class="col-md-10">
+            	<textarea style="height:245px" type="textarea" class="form-control" row="10" id="content" ></textarea>
+        	</div>
+        </div>
+        <div class="col-md-12">
+         <label class="col-md-1 control-label"> 发件人：</label>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-1">
+        	<button type="submit" class="btn btn-default">发送</button>
+        	<button type="submit" class="btn btn-default">存到草稿箱</button>
+        </div>
+    </form>
+	</div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script>
+function draft(){
+}
+</script>
+</body>
+</html>

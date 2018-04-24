@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Iframe</title>
+    <style type="text/css">
+
+        .left{
+            color:#0F0;
+            border: #0F6 1px solid;
+            width:20%;
+            height:300px;
+            float:left;
+            text-align:center;
+        }
+
+        .right{
+            color:#0F0;
+            border: #30C 1px solid;
+            width:79%;
+            height:300px;
+            position:relative;
+            float:right;
+            text-align:center;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        // 全局变量
+        var src;
+
+        //带参数函数
+        function goToPage(param){
+            document.getElementById("myIframe").src=param;
+            src=param;
+            // 打印传递过来的参数
+            printf();
+            //$("#myIframe").attr("src",param);
+        }
+
+        //无参数函数
+        function printf(){
+            alert(src);
+        }
+    </script>
+</head>
+
+<body>
+<div id="left" class="left">left<br/>
+    <a href="1index.html" onclick="goToPage('1index.html')">1index</a><br/>
+    <a href="2index.html"  onclick="goToPage('2index.html')">2index</a><br/>
+    <a href="3index.html"  onclick="goToPage('3index.html')">3index</a><br/>
+    <a href="4index.html"  onclick="goToPage('4index.html')">4index</a><br/>
+    <a href="5index.html"  onclick="goToPage('5index.html')">5index</a><br/>
+</div>
+
+<div id="right" class="right">right<br/>
+    <iframe id="myIframe" src="1index.html" style="height:230px;width:100%;" frameborder="0" >
+    </iframe>
+</div>
+</body>
+</html>

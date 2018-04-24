@@ -1,0 +1,70 @@
+body{
+    overflow:hidden;
+    text-align:center;
+    padding-right: 0!important;
+}
+*{
+    padding: 0;margin: 0;
+
+}
+
+.all{
+    border: 1px solid lightblue;
+    width: 325px;
+    height: 350px;
+    position: relative;
+    margin:auto;
+    top:100PX;
+}
+
+.all .second .host{
+    width: 284px;
+    height: 35px;
+    margin-top: 45px;
+}
+.all .second .username{
+    width: 284px;
+    height: 35px;
+    margin-top: 75px;
+}
+
+.all .second .password{
+    width: 284px;
+    height: 35px;
+    margin-top: 15px;
+}
+
+.all .second .ok{
+    width: 284px;
+    height: 40px;
+    margin-top: 17px;
+    border: 0;
+    background-color: cornflowerblue;
+    font-size:larger;
+    color: white;
+    font-family: "微软雅黑";
+}
+
+.all .second{
+    width: 325px;
+    height: 350px;
+    position: relative;
+}
+
+.all .second .bnext{
+    position:relative;
+    width: 20px;
+    height: 35px;
+    margin-top:15px;
+    margin-right:265px;
+}
+
+.all .second .tnext {
+    position: absolute;
+    left: 8px;
+    top: 183px;
+    display: block;
+    font-size: small;
+    text-align: left;
+    margin-left: 45px;
+}
